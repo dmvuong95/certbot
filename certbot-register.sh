@@ -1,5 +1,8 @@
 #!/bin/bash
 set -e
+dir_name=$(dirname $0)
+
+cd $dir_name
 
 # Read .env file
 export $(grep -v '^#' .env | xargs)
