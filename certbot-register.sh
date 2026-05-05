@@ -7,7 +7,7 @@ cd $dir_name
 # Read .env file
 export $(grep -v '^#' .env | xargs)
 
-docker run --rm \
+docker run --rm -it \
            -e "CLOUDFLARE_API_KEY=$CLOUDFLARE_API_KEY" \
            -e "CLOUDFLARE_EMAIL=$CLOUDFLARE_EMAIL" \
            -e "domain_name=$DOMAIN" \

@@ -5,5 +5,5 @@ apk add curl bash > /dev/null \
       -d "$domain_name" \
       -d "*.$domain_name" \
       --manual \
-      --manual-auth-hook auth-hook.sh \
-      --manual-cleanup-hook cleanup-hook.sh
+      --manual-auth-hook ./auth-hook.sh \
+      --manual-cleanup-hook ./cleanup-hook.sh

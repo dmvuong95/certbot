@@ -3,5 +3,5 @@ apk add curl bash > /dev/null \
       --cert-name $domain_name \
       --preferred-challenges dns \
       --manual \
-      --manual-auth-hook auth-hook.sh \
-      --manual-cleanup-hook cleanup-hook.sh
+      --manual-auth-hook ./auth-hook.sh \
+      --manual-cleanup-hook ./cleanup-hook.sh
